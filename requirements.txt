@@ -1,0 +1,3 @@
+boto3              # AWS SDK for Python (S3, DynamoDB, Lambda interactions)
+botocore           # Core dependency for boto3
+awscli             # Test locally
