@@ -10,6 +10,7 @@ S3_BUCKET_NAME =  os.getenv("S3_BUCKET_NAME")# Must be globally unique
 
 _s3_client = None
 _dynamodb_client = None
+_dynamodb_resource = None
 
 def get_s3_client():
     global _s3_client
@@ -24,9 +25,22 @@ def get_s3_client():
 
 def get_dynamodb_client():
     global _dynamodb_client
+
     if _dynamodb_client is None:
         _dynamodb_client = boto3.client(
             "dynamodb",
             region_name=AWS_REGION
         )
+    
     return _dynamodb_client
+
+def get_dynamodb_resource():
+    global _dynamodb_resource
+
+    if _dynamodb_resource is None:
+        _dynamodb_resource = boto3.resource(
+            "dynamodb",
+            region_name = AWS_REGION
+        )
+
+    return _dynamodb_resource
