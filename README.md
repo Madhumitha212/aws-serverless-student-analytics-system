@@ -119,6 +119,7 @@ https://www.kaggle.com/datasets/nabeelqureshitiii/student-performance-dataset/da
 
 ## project structure
 
+```
 ├── config/
 |   └── get_d3_dynamodb.py
 │
@@ -140,6 +141,7 @@ https://www.kaggle.com/datasets/nabeelqureshitiii/student-performance-dataset/da
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
