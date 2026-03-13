@@ -22,7 +22,7 @@ if __name__ == "__main__":
     # Input/output files
     csv_file = "dataset/student_performance.csv"
     json_file = "student_performance.json"
-    s3_key = "student_performance.json"
+    s3_key = "uploads/student_performance.json"
 
     # Step 1: Convert CSV → JSON
     converted_file = convert_csv_to_json(csv_file, json_file)
